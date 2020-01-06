@@ -17,38 +17,35 @@
         <div class="form__content">
           <div class="form__content-line">
             Кот
-            <label for="trick-out-cat-form__cat-age">
-              <input class="form__input trick-out-cat-form__cat-age" name="cat-age"
-                     id="trick-out-cat-form__cat-age"/>
-              лет
-            </label>
-            и
-            <label for="trick-out-cat-form__cat-weight">
-              <input class="form__input trick-out-cat-form__cat-weight" name="cat-weight"
-                     id="trick-out-cat-form__cat-weight"/>
-              кг
-            </label>
+            <input class="form__input trick-out-cat-form__cat-age" name="cat-age"
+                   aria-label="Возраст кота"/>
+            лет и
+            <input class="form__input trick-out-cat-form__cat-weight" name="cat-weight"
+                  aria-label="Вес кота"/>
+            кг
           </div>
-          <label class="form__content-line" for="trick-out-cat-form__user-email">
+          <div class="form__content-line">
             <input type="email" class="form__input" name="user-email"
-                   id="trick-out-cat-form__user-email" placeholder="Email (ваш)"/>
-          </label>
-          <label class="form__content-line" for="trick-out-cat-form__cat-dream">
+                   aria-label="Ваш Email" placeholder="Email (ваш)"/>
+          </div>
+          <div class="form__content-line">
             <select class="form__input trick-out-cat-form__cat-dream" name="cat-dream"
-                    id="trick-out-cat-form__cat-dream">
+                    aria-label="Желаемый вариант прокачки">
               <option value="increase-weight">Набор массы</option>
               <option value="decrease-weight">Похудение</option>
               <option value="none">Не знаю</option>
             </select>
-          </label>
-          <label class="form__content-line secondary-text smaller" for="trick-out-cat-form__spam">
+          </div>
+          <div class="form__content-line secondary-text">
             <input type="checkbox" class="form__input-checkbox" name="spam"
                    id="trick-out-cat-form__spam"/>
             <span class="form__input-checkbox-view">
               <span class="form__input-checkbox-icon"></span>
             </span>
-            Хочу спам
-          </label>
+            <label class="smaller" for="trick-out-cat-form__spam">
+              Хочу спам
+            </label>
+          </div>
           <div class="form__content-line">
             <button class="form__submit-button" type="submit">Подписаться</button>
           </div>
