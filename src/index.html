@@ -3,8 +3,60 @@
   <head>
     <meta charset="utf-8">
     <title>03-pimp-your-cat</title>
+    <link rel="stylesheet" href="./form.css">
     <link rel="stylesheet" href="./index.css">
   </head>
   <body>
+    <form class="form trick-out-cat-form">
+      <div class="form__data">
+        <h2 class="form__title">Прокачай кота!</h2>
+        <span class="form__description">
+          Подпишись на рассылку нашего тренера и получи индивидуальную подобранную программу
+          тренировок для своего кота
+        </span>
+        <div class="form__content">
+          <div class="form__content-line">
+            Кот
+            <label>
+              <input class="form__input trick-out-cat-form__cat-age" name="cat-age"/>
+              лет
+            </label>
+            и
+            <label>
+              <input class="form__input trick-out-cat-form__cat-weight" name="cat-weight"/>
+              кг
+            </label>
+          </div>
+          <label class="form__content-line">
+            <input class="form__input" name="user-email" placeholder="Email (ваш)" type="email"/>
+          </label>
+          <label class="form__content-line">
+            <select class="form__input trick-out-cat-form__cat-dream" name="cat-dream">
+              <option value="increase-weight">Набор массы</option>
+              <option value="decrease-weight">Похудение</option>
+              <option value="none">Не знаю</option>
+            </select>
+          </label>
+          <label class="form__content-line secondary-text smaller">
+            <input class="form__input-checkbox" name="spam" type="checkbox"/>
+            <span class="form__input-checkbox-view">
+              <span class="form__input-checkbox-icon"></span>
+            </span>
+            Хочу спам
+          </label>
+          <div class="form__content-line">
+            <button class="form__submit-button" type="submit">Подписаться</button>
+          </div>
+        </div>
+      </div>
+      <div class="form__poster">
+        <div class="form__tablecloth"></div>
+        <img class="form__media" alt="Ржомба: кот с угарным лицом сидит за ноутбуком" title="Ржомба"
+             src="https://sun9-55.userapi.com/c841333/v841333288/3072c/W0mCn2bMDNQ.jpg"/>
+      </div>
+      <span class="form__close-button button-role" title="Закрыть форму" role="button" tabindex="0">
+        ×
+      </span>
+    </form>
   </body>
 </html>
